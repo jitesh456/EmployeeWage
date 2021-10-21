@@ -1,0 +1,14 @@
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\obj\Debug\netcoreapp3.1\EmployeeWageCalculation.csproj.AssemblyReference.cache
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\obj\Debug\netcoreapp3.1\EmployeeWageCalculation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\obj\Debug\netcoreapp3.1\EmployeeWageCalculation.AssemblyInfoInputs.cache
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\obj\Debug\netcoreapp3.1\EmployeeWageCalculation.AssemblyInfo.cs
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\obj\Debug\netcoreapp3.1\EmployeeWageCalculation.csproj.CoreCompileInputs.cache
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\bin\Debug\netcoreapp3.1\EmployeeWageCalculation.exe
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\bin\Debug\netcoreapp3.1\EmployeeWageCalculation.deps.json
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\bin\Debug\netcoreapp3.1\EmployeeWageCalculation.runtimeconfig.json
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\bin\Debug\netcoreapp3.1\EmployeeWageCalculation.runtimeconfig.dev.json
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\bin\Debug\netcoreapp3.1\EmployeeWageCalculation.dll
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\bin\Debug\netcoreapp3.1\EmployeeWageCalculation.pdb
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\obj\Debug\netcoreapp3.1\EmployeeWageCalculation.dll
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\obj\Debug\netcoreapp3.1\EmployeeWageCalculation.pdb
+C:\Users\Jites\source\repos\EmployeeWageCalculation\EmployeeWageCalculation\obj\Debug\netcoreapp3.1\EmployeeWageCalculation.genruntimeconfig.cache
