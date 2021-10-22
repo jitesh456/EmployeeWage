@@ -12,7 +12,8 @@ namespace EmployeeWageCalculation
         public int maxWorkingHr;
         public string CompanyName;
         public int totalEmpWage;
-
+        public int[] dayWage;
+        
         public EmployeeWage(int empRatePerHoure, int noOfWorkingDays, int maxWorkingHr, string companyName)
         {
             this.empRatePerHoure = empRatePerHoure;
@@ -20,12 +21,12 @@ namespace EmployeeWageCalculation
             this.maxWorkingHr = maxWorkingHr;
             CompanyName = companyName;
             totalEmpWage = 0;
+            this.dayWage = new int[noOfWorkingDays];
         }
 
         public void setTotalEmployeeWage(int totalEmpWage)
         {
             this.totalEmpWage = totalEmpWage;
-
         }
 
         public int getTotalEmployeeWage()

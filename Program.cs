@@ -1,6 +1,7 @@
-﻿using System;
+﻿using EmployeeWageCalculation;
+using System;
 
-namespace EmployeeWageCalculation
+namespace EmployeeWageCalculation7
 {
     class Program
     {
@@ -11,7 +12,8 @@ namespace EmployeeWageCalculation
             employeeWageBuilderObject1.addCompany(12, 20, 100, "Dmart");
             employeeWageBuilderObject1.addCompany(15, 17, 80, "Relience");
             employeeWageBuilderObject1.computeEmpWageForAllCompany();
-
+            Console.WriteLine("Total wage of Dmart " + employeeWageBuilderObject1.getTotalWageByCompanyName("Dmart"));
+            
         }
     }
 }

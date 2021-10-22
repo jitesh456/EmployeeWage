@@ -11,6 +11,10 @@ namespace EmployeeWageCalculation
         const int IS_PART_TIME = 2;
 
         EmployeeWage[] employeeWages;
+
+        Dictionary<string, int> companyDictionary = new Dictionary<string, int>();
+
+
         static int noOfCompany=0;
 
         public EmployeeWageBuilderArray()
@@ -23,11 +27,14 @@ namespace EmployeeWageCalculation
             employeeWages[noOfCompany] = new EmployeeWage(empRatePerHoure, noOfWorkingDays, maxWorkingHr, companyName);
             noOfCompany++;
         }
+
         public void computeEmpWageForAllCompany()
         {
             for (int no = 0; no < noOfCompany; no++)
             {
-                employeeWages[no].setTotalEmployeeWage(computeEmpWage(employeeWages[no]));
+                int wage= computeEmpWage(employeeWages[no]);
+                employeeWages[no].setTotalEmployeeWage(wage);
+                companyDictionary.Add(employeeWages[no].CompanyName, employeeWages[no].totalEmpWage);
                 Console.WriteLine(" Employee Wage: " + employeeWages[no].getTotalEmployeeWage() + " company:" + employeeWages[no].CompanyName);
             }
         }
@@ -36,13 +43,14 @@ namespace EmployeeWageCalculation
         public  int computeEmpWage(EmployeeWage employeeWage)
         {
             int empWage = 0;
+            int totalempHr = 0;
             int empHr = 0;
             Random random = new Random();
-
+            int totalWage = 0;
             int empCheck = random.Next(0, 3);
             int day = 0;
 
-            while (day < employeeWage.noOfWorkingDays && empHr < employeeWage.maxWorkingHr)
+            while (day < employeeWage.noOfWorkingDays && totalempHr < employeeWage.maxWorkingHr)
             {
                 switch (empCheck)
                 {
@@ -59,15 +67,23 @@ namespace EmployeeWageCalculation
                         break;
                 }
 
-                empHr += empHr;
+                totalempHr += empHr;
+                empWage = empHr * employeeWage.empRatePerHoure;
+                totalWage += empWage;
+                employeeWage.dayWage[day] = empWage;
                 day++;
             }
 
-            empWage = empHr * employeeWage.empRatePerHoure;
+
 
             Console.WriteLine(" No Of days: " + day + " No of hr: " + empHr);
             
-            return empWage;
+            return totalWage;
+        }
+
+        public int getTotalWageByCompanyName(string name)
+        {
+            return companyDictionary[name];
         }
     }
 }
